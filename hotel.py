@@ -16,7 +16,7 @@ def geocoding(place):
 def hotel_search(place, checkin, checkout):
    latitude, longitude = geocoding(place)
 
-   url = "https://rakuten-line-bot.herokuapp.com/"
+   url = "https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20170426"
    params = {'applicationId': '1098367389533791358',
              'formatVersion': '2',
              'checkinDate': checkin,
